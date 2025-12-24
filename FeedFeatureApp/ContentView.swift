@@ -6,19 +6,16 @@
 //
 
 import SwiftUI
+import PlatformKit
 
 struct ContentView: View {
+    let feature: MicroFeature
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        feature.makeRootView()
     }
 }
 
-#Preview {
-    ContentView()
-}
+//#Preview {
+//    ContentView()
+//}
